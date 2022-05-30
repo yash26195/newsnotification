@@ -1,8 +1,14 @@
-# News Notifications Pub-Sub-Distributed System
+# News Notifications Publisher-Subscriber Distributed System
 
-Publish/Subscribe (or pub/sub for short) is a popular **indirect** communication system. `Pub/sub` systems disseminates events to multiple recipients (called subscribers) through an intermediary. Examples of successful pub/sub include `Twitter` and `Bloomberg terminal`-like financial systems. In this project, we will emulate a pub/sub system using `Docker` which is a computer program that performs operating-system-level virtualization, also known as "containerization".
+The purpose of this project is to use the publisher subscriber model to provide all subscribers news highlights notifications. Users will be able to subscribe to a certain type of news or a specific topic of news. The publisher will retrieve the latest news data from the internet. On a regular basis, the publisher will provide a list of the latest news.
 
-You will need to install **docker** if you do not have it already. To install follow the steps given here https://docs.docker.com/get-docker/
+'Pub/sub' systems use an intermediary to distribute events to numerous receivers (called subscribers).  We'll use Docker containers to simulate a pub/sub system in this project.
+
+Technologies used:
+Python 
+Node.js
+Docker
+To install follow the steps given here https://docs.docker.com/get-docker/
 
 ```
 $ docker --version   #checking if docker is installed perfectly
@@ -13,11 +19,11 @@ $ docker --version   #checking if docker is installed perfectly
 First go the `newsnotifications` directory. Then run the below commands:
 
 ```
-docker build -t pubsub-image:v1 #create new image for pubsub application
-docker run -d -p 80:80 --name pubsub_central pubsub-image:v1
+docker build -t newsnotification-image:v1 #create new image for newsnotification application
+docker run -d -p 80:80 --name newsnotification_central newsnotification-image:v1
 ```
 
-Now go to url `localhost:80` to see the output of the app from docker.
+The application should be running on https:\\localhost:80
 
 ## Backend 
 
@@ -26,8 +32,6 @@ Go the `newsnotifications` directory. Then run the below commands:
 ```
 docker-compose up
 ```
-
-Note: If you want to stop the servers, then press `Ctrl+C`
 
 
 ## Additional Documentation
@@ -48,11 +52,3 @@ Note: If you want to stop the servers, then press `Ctrl+C`
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
-
-
-Credits
-
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
-
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
