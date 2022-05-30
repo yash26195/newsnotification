@@ -67,8 +67,8 @@
     }
     .textbox-design input{
     		width:70%;
-    		display: inline
-        position: relative;
+    		display: inline;
+            position: relative;
     }
 
     .textbox-design button{
@@ -159,11 +159,11 @@
             </div>
             <!-- This division deals with the list of publishers-->
             <div id='list-of-publishers'>
-                {{#publishers_array}}
+                {{#list_of_publishers}}
                 <!-- This is an array, so we need to access it through sections.
-                  {{#publishers_array}}
+                  {{#list_of_publishers}}
                   /* something*/
-                  {{/publishers_array}}-->
+                  {{/list_of_publishers}}-->
 
                 <!-- this is the division that deals with activities of a publisher-->
                 <div class='publisher'>
@@ -183,7 +183,7 @@
                         {{/Tweets}}
                     </ol>
                 </div>
-                {{/publishers_array}}
+                {{/list_of_publishers}}
                 <br style='clear:both'/>
             </div>
         </div>
@@ -200,7 +200,7 @@
             <!-- this is the division which deals with the list of subscribers-->
             <div id='list-of-subscribers'>
                 <!-- We need to access subscribers array through sections -->
-                {{#subscribers_array}}
+                {{#list_of_subscribers}}
                 <!-- this section handles all the activities of subscriber design-->
                 <div class='subscriber'>
                     <h5>{{name}}</h5> <!-- The names are variables-->
@@ -223,7 +223,7 @@
 
                     </ul>
                 </div>
-                {{/subscribers_array}}
+                {{/list_of_subscribers}}
                 <br style='clear:both'/>
             </div>
         </div>

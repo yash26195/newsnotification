@@ -1,17 +1,20 @@
-
-/* JS functions for handling start and change of events*/
-
-var incidents = {
-  incidents: {},
-  start: function (Nameofincident, instance) {
-    this.incidents[Nameofincident] = this.incidents[Nameofincident] || [];
-    this.incidents[Nameofincident].push(instance);
-  },
-  change: function (Nameofincident, info) {
-    if (this.incidents[Nameofincident]) {
-      this.incidents[Nameofincident].forEach(function(instance) {
-        instance(info);
-      });
-    }
-  }
+// Functions created for altering and setting up events
+var actions = {
+    actions: {},
+    alter: (action_name, fact) => {
+        if (this.actions[action_name]) {
+            this.actions[action_name].forEach((event) => {
+                event(fact);
+            });
+        }
+    },
+    remove: (action_name) => {
+        if (this.actions[action_name]) {
+            this.actions[action_name].pop();
+        }
+    },
+    setup: (action_name, event) => {
+        this.actions[action_name] = this.actions[action_name] || [];
+        this.actions[action_name].push(event);
+    },
 };
