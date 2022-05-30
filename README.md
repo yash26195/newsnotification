@@ -1,26 +1,6 @@
-=================
-NewsNotifications
-=================
-
-
-.. image:: https://img.shields.io/pypi/v/newsnotifications.svg
-        :target: https://pypi.python.org/pypi/newsnotifications
-
-.. image:: https://img.shields.io/travis/yash26195/newsnotifications.svg
-        :target: https://travis-ci.com/yash26195/newsnotifications
-
-.. image:: https://readthedocs.org/projects/newsnotifications/badge/?version=latest
-        :target: https://newsnotifications.readthedocs.io/en/latest/?version=latest
-        :alt: Documentation Status
-
-
-
+# NewsNotifications
 
 Implementing various algorithms learnt as a part of distributed systems to create a pub-sub news notification service
-
-
-* Free software: MIT license
-* Documentation: https://newsnotifications.readthedocs.io.
 
 
 Features
@@ -37,10 +17,9 @@ You will need to install **docker** if you do not have it already.
 ```
 $ sudo snap install docker
 $ docker --version   #checking if docker is installed perfectly
-
 ```
 
-`(Distributed Publisher/Subscriber System with a Decentralized Server)`
+(Distributed Publisher/Subscriber System with a Decentralized Server)
 
 Frontend
 First go the `newsnotifications` directory. Then run the below commands:
@@ -58,10 +37,23 @@ First go the `newsnotifications` directory. Then run the below commands:
 
 ```
 docker-compose up
-
 ```
 
 If you want to stop the servers, then press `Ctrl+C`
+
+
+## Additional Documentation
+
+.. image:: https://img.shields.io/pypi/v/newsnotifications.svg
+        :target: https://pypi.python.org/pypi/newsnotifications
+
+.. image:: https://img.shields.io/travis/yash26195/newsnotifications.svg
+        :target: https://travis-ci.com/yash26195/newsnotifications
+
+.. image:: https://readthedocs.org/projects/newsnotifications/badge/?version=latest
+        :target: https://newsnotifications.readthedocs.io/en/latest/?version=latest
+        :alt: Documentation Status
+
 
 ---
 ## License
@@ -70,8 +62,6 @@ If you want to stop the servers, then press `Ctrl+C`
 
 - **[MIT license](http://opensource.org/licenses/mit-license.php)**
 
-
-* TODO
 
 Credits
 -------
