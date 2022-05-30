@@ -2,12 +2,10 @@
 Credits
 =======
 
-Development Lead
-----------------
-
-* Yash Parekh <yparekh@scu.edu>
-
-Contributors
+Dev Team
 ------------
 
-None yet. Why not be the first?
+* Yash Parekh <yparekh@scu.edu>
+* Prateek Konduru <pkonduru@scu.edu>
+* Shubham Singla <ssingla@scu.edu>
+* Anthony Rishwain <arishwain@scu.edu>
