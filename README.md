@@ -23,7 +23,7 @@ docker build -t newsnotification-image:v1 #create new image for newsnotification
 docker run -d -p 80:80 --name newsnotification_central newsnotification-image:v1
 ```
 
-The application should be running on https:\\localhost:80
+The application should be running on `https:\\localhost:80 `
 
 ## Backend 
 
