@@ -10,7 +10,7 @@ newstopics = ['World','Politics','Sports','Technology','Stocks']
 topics = ['World','Politics','Sports']
 subscriptions = {}
 events = { 'World' : ['Flights cancelled on busy Memorial Day', 'US stop soaring oil and gas prices', 'Pope announces 21 new Cardinals'],
-    'Politics' : ['Billionaire Attacking Elon Musk'],
+    'Politics' : ['Billionaire Attacking Elon Musk', 'US elections to be held in Jan'],
     'Sports' : ['Boston will reach NBA Finals','Sergio Perez win Monaco Grand Prix']
 }
 
