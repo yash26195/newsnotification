@@ -19,7 +19,7 @@ $ docker --version   #checking if docker is installed perfectly
 First go the `newsnotifications` directory. Then run the below commands:
 
 ```
-docker build -t newsnotification-image:v1 #create new image for newsnotification application
+docker build -t newsnotification-image:v1 . #create new image for newsnotification application
 docker run -d -p 80:80 --name newsnotification_central newsnotification-image:v1
 ```
 
