@@ -44,7 +44,7 @@
       border:3px solid gray;
       width:300px;
       height:auto;
-      float:right;
+      float:left;
       padding: 20px;
       background:darkgray;
 
@@ -120,9 +120,9 @@
 </head>
 <body>
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" style="background-color: black;">
     <div class="container px-5">
-        <a class="navbar-brand" href="#page-top">News Notification Distributed Publisher-Subscriber</a>
+        <h2><a class="navbar-brand" href="#page-top">News Notification Distributed Publisher-Subscriber</a><h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-icon"></span></button>
@@ -150,7 +150,7 @@
     <div class="row">
 
         <div class="col-md">
-            <h2> Publishers </h2>
+            <h2 style="padding-top: 75px;"> Publishers </h2>
             <!-- This division is for adding and removing publishers-->
             <div id='add_rem_pub' class='textbox-design'>
                 <input type='text' class='form-control' placeholder='Publisher Name'>
@@ -192,7 +192,7 @@
 
         <!-- this is the division which deals with adding and removing subscribers-->
         <div class="col-md">
-            <h2> Subscriber </h2>
+            <h2 style="padding-top: 75px;"> Subscriber </h2>
             <div id='add_rem_sub' class='textbox-design'>
                 <input type='text' class='form-control' placeholder='Subscriber Name'>
                 <button type="button" class="btn btn-success  btn-lg">Add</button>
