@@ -155,6 +155,7 @@ def Main():
         
         if data:
             print("Welcome ",data)
+            print("\n")
         l = data.split('-')
         if l[0]=='c':
             userList.append(l[1])
